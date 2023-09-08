@@ -1,1 +1,67 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+header {
+  background-color: rgba(228, 154, 132, 0.466);
+  padding: 16px;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 70px;
+}
+header .container .menu-bars {
+  border: none;
+  font-size: 25px;
+  background-color: transparent;
+}
+@media (min-width: 992px) {
+  header .container .menu-bars {
+    display: none;
+  }
+}
+header .container .menu {
+  display: none;
+  flex: 1;
+}
+@media (min-width: 992px) {
+  header .container .menu {
+    display: block;
+  }
+}
+header .container .menu .top-menu {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.4);
+  padding-bottom: 5px;
+}
+header .container .menu .top-menu .contact-information {
+  display: flex;
+}
+header .container .menu .top-menu .contact-information .content-box {
+  padding-right: 25px;
+  margin-right: 25px;
+  border-right: 1px solid rgba(102, 102, 102, 0.4);
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 300px;
+}
+header .container .menu .top-menu .contact-information .content-box i {
+  margin-right: 5px;
+  font-size: 1.2em;
+  color: rgba(102, 102, 102, 0.4);
+}
+header .container .menu .top-menu .contact-information .content-box.last {
+  border: none;
+}
+header .container .menu .top-menu .social-media a {
+  font-size: 1.3em;
+  margin-left: 10px;
+}
+header .container .menu .top-menu .social-media a:hover {
+  color: rgba(188, 168, 168, 0.4);
+}
+@media (min-width: 2500px) {
+  header .container {
+    max-width: 2048px;
+  }
+}/*# sourceMappingURL=style.css.map */

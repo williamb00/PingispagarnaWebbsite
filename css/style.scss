@@ -1,3 +1,87 @@
-html, body {
-    
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+
+header {
+background-color: rgba(228, 154, 132, 0.466);
+padding: 16px;
+
+.container {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+gap: 70px;
+
+.menu-bars {
+    border: none;
+    font-size: 25px;
+    background-color: transparent;
+
+    @media (min-width: 992px) {
+        display: none;
+    }
+}
+
+.menu {
+    display: none;
+    flex: 1;
+
+    @media (min-width: 992px) {
+        display: block;
+    }
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #6666;
+    padding-bottom: 5px;
+
+    .contact-information {
+        display: flex;
+
+        .content-box {
+            padding-right: 25px;
+            margin-right: 25px;
+            border-right: 1px solid #6666;
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 300px;
+
+            i {
+                margin-right: 5px;
+                font-size: 1.2em;
+                color: #6666;
+
+            }
+
+
+            &.last {
+                border: none;
+            }
+        }
+    }
+.social-media {
+    a {
+        font-size: 1.3em;
+        margin-left: 10px;
+
+        &:hover {
+            color: #bca8a866;
+        }
+    }
+}
+}
+
+
+}
+
+
+@media (min-width: 2500px) {
+    max-width: 2048px;
+}
+
+
+
+
+}
+
+
 }
