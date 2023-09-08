@@ -13,10 +13,17 @@ html, body {
   text-decoration: none;
   padding: 8px 25px;
   font-weight: 700;
+  font-size: 16px;
   border-radius: 25px;
 }
 .btn-red i {
   margin-left: 8px;
+  font-size: 0.85em;
+}
+.btn-red:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #ffffff;
 }
 
 header {
@@ -50,14 +57,24 @@ header .container .menu {
 }
 header .container .menu .top-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   border-bottom: 1px solid rgba(102, 102, 102, 0.4);
   padding-bottom: 5px;
   align-items: center;
 }
+@media (min-width: 1200px) {
+  header .container .menu .top-menu {
+    justify-content: space-between;
+  }
+}
 header .container .menu .top-menu .contact-information {
-  display: flex;
+  display: none;
   align-items: center;
+}
+@media (min-width: 1200px) {
+  header .container .menu .top-menu .contact-information {
+    display: flex;
+  }
 }
 header .container .menu .top-menu .contact-information .content-box {
   padding-right: 25px;
@@ -70,17 +87,18 @@ header .container .menu .top-menu .contact-information .content-box {
 header .container .menu .top-menu .contact-information .content-box i {
   margin-right: 5px;
   font-size: 1.2em;
-  color: rgba(102, 102, 102, 0.4);
+  color: #191919;
 }
 header .container .menu .top-menu .contact-information .content-box.last {
   border: none;
 }
 header .container .menu .top-menu .social-media a {
+  color: #191919;
   font-size: 1.3em;
   margin-left: 10px;
 }
 header .container .menu .top-menu .social-media a:hover {
-  color: rgba(11, 11, 11, 0.4);
+  color: #ffffff;
 }
 header .container .menu .main-menu {
   display: flex;

@@ -14,10 +14,18 @@ html, body {
     text-decoration: none;
     padding: 8px 25px;
     font-weight: 700;
+    font-size: 16px;
     border-radius: 25px;
 
     i {
         margin-left: 8px;
+        font-size: 0.85em;
+    }
+
+    &:hover {
+        background-color: #191919;
+        border: 1px solid #191919;
+        color: #ffffff;
     }
 }
 
@@ -51,14 +59,22 @@ gap: 70px;
     }
 .top-menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     border-bottom: 1px solid #6666;
     padding-bottom: 5px;
     align-items: center;
 
+    @media (min-width: 1200px) {
+        justify-content: space-between;
+    }
+
     .contact-information {
-        display: flex;
+        display: none;
         align-items: center;
+
+        @media (min-width: 1200px) {
+            display: flex;
+        }
 
         .content-box {
             padding-right: 25px;
@@ -71,7 +87,7 @@ gap: 70px;
             i {
                 margin-right: 5px;
                 font-size: 1.2em;
-                color: #6666;
+                color: #191919;
 
             }
 
@@ -83,11 +99,12 @@ gap: 70px;
     }
 .social-media {
     a {
+        color: #191919;
         font-size: 1.3em;
         margin-left: 10px;
 
         &:hover {
-            color: #0b0b0b66;
+            color: #ffffff;
         }
     }
 }
