@@ -33,9 +33,11 @@ gap: 70px;
     justify-content: space-between;
     border-bottom: 1px solid #6666;
     padding-bottom: 5px;
+    align-items: center;
 
     .contact-information {
         display: flex;
+        align-items: center;
 
         .content-box {
             padding-right: 25px;
@@ -64,10 +66,40 @@ gap: 70px;
         margin-left: 10px;
 
         &:hover {
-            color: #bca8a866;
+            color: #0b0b0b66;
         }
     }
 }
+}
+
+.main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+
+    nav {
+        a {
+            display: inline-block;
+            color: #191919;
+            text-decoration: none;
+            margin-right: 35px;
+            position: relative;
+
+            &.active::after, 
+            &:hover::after {
+                content: '';
+                position: absolute;
+                font-weight: 500;
+                height: 2px;
+                width: 15px;
+                background-color: #191919;
+                left: 50%;
+                bottom: -3px;
+                transform: translate((calc(50% - 15px)));
+            }
+        }
+    }
 }
 
 

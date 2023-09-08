@@ -33,9 +33,11 @@ header .container .menu .top-menu {
   justify-content: space-between;
   border-bottom: 1px solid rgba(102, 102, 102, 0.4);
   padding-bottom: 5px;
+  align-items: center;
 }
 header .container .menu .top-menu .contact-information {
   display: flex;
+  align-items: center;
 }
 header .container .menu .top-menu .contact-information .content-box {
   padding-right: 25px;
@@ -58,7 +60,31 @@ header .container .menu .top-menu .social-media a {
   margin-left: 10px;
 }
 header .container .menu .top-menu .social-media a:hover {
-  color: rgba(188, 168, 168, 0.4);
+  color: rgba(11, 11, 11, 0.4);
+}
+header .container .menu .main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+header .container .menu .main-menu nav a {
+  display: inline-block;
+  color: #191919;
+  text-decoration: none;
+  margin-right: 35px;
+  position: relative;
+}
+header .container .menu .main-menu nav a.active::after, header .container .menu .main-menu nav a:hover::after {
+  content: "";
+  position: absolute;
+  font-weight: 500;
+  height: 2px;
+  width: 15px;
+  background-color: #191919;
+  left: 50%;
+  bottom: -3px;
+  transform: translate(calc(50% - 15px));
 }
 @media (min-width: 2500px) {
   header .container {
