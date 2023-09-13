@@ -53,8 +53,11 @@ html, body {
 }
 
 .section-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
     p {
         color: #f90000;
+        margin-bottom: 7px;
 
     }
 
@@ -285,7 +288,6 @@ gap: 70px;
 
         .section-title {
             text-align: center;
-            margin-bottom: 10px;
         }
     }
 
