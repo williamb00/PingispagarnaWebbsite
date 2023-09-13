@@ -52,6 +52,21 @@ html, body {
     }
 }
 
+.section-title {
+    p {
+        color: #f90000;
+
+    }
+
+    h2 {
+        color: #191919;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 45px;
+
+    }
+
+}
 
 header {
 background-color: rgba(247, 195, 176, 0.466);
@@ -263,4 +278,15 @@ gap: 70px;
 
 
     }
+}
+
+.project-and-case {
+    .container {
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+
 }

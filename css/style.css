@@ -47,6 +47,16 @@ html, body {
   color: #ffffff;
 }
 
+.section-title p {
+  color: #f90000;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
 header {
   background-color: rgba(247, 195, 176, 0.466);
   padding: 16px;
@@ -231,4 +241,9 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   .showcase .container img {
     display: block;
   }
+}
+
+.project-and-case .container .section-title {
+  text-align: center;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */
