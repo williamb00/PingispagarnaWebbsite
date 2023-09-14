@@ -289,6 +289,26 @@ gap: 70px;
         .section-title {
             text-align: center;
         }
+        .project-and-cases {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+
+            article {
+
+                img {
+
+                }
+
+                h3 {
+
+                }
+
+                a {
+
+                }
+            }
+        }
     }
 
 }

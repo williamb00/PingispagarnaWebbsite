@@ -250,4 +250,9 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 
 .project-and-case .container .section-title {
   text-align: center;
+}
+.project-and-case .container .project-and-cases {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }/*# sourceMappingURL=style.css.map */
