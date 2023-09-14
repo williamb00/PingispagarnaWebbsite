@@ -8,6 +8,13 @@ html, body {
     font-weight: 400;
 }
 
+.wrapper-grid {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
 .btn-red {
     background-color: #f90000;
     border: 1px solid #191919;
@@ -27,6 +34,28 @@ html, body {
         background-color: #191919;
         border: 1px solid #191919;
         color: #ffffff;
+    }
+}
+
+.btn-black {
+    background-color: #191919;
+    border: 1px solid #191919;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 25px;
+
+    i {
+        margin-left: 8px;
+        font-size: 0.85em;
+    }
+
+    &:hover {
+        background-color: #ffffff;
+        border: 1px solid #191919;
+        color: #191919;
     }
 }
 
@@ -68,6 +97,13 @@ html, body {
         font-size: 45px;
 
     }
+
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -288,26 +324,75 @@ gap: 70px;
 
         .section-title {
             text-align: center;
+            padding-top: 70px;
+            padding-bottom: 45px;
+
+            @media (min-width: 768px) {
+            padding-top: 120px;
+            padding-bottom: 90px;
+
+            }
+
+
         }
         .project-and-cases {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             gap: 30px;
 
-            article {
+            @media (min-width: 768px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .project {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr auto;
+                color: #191919;
+                text-decoration: none;
 
                 img {
+                    width: 100%;
+                    @media (max-width: 992px) {
+                        height: auto;
+                    }
 
                 }
 
                 h3 {
+                font-family: 'DM Sans', sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+                padding-top: 30px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #6666;
 
                 }
 
-                a {
+                .readmore {
+                    padding: 15px 15px;
+                    margin-right: 15px;
+                    display: block;
+                    text-align: right;
+                    font-family: 'inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: #191919;
+                    i {
+                        margin-left: 3px;
+                    }
 
                 }
+                &:hover .readmore {
+                    text-decoration: underline;
+                }
+
             }
+        }
+        .center-content {
+            margin-top: 50px;
+            margin-bottom: 90px;
         }
     }
 
