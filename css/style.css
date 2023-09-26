@@ -15,7 +15,7 @@ html, body {
 }
 
 .btn-red {
-  background-color: #f90000;
+  background-color: #f9d783;
   border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
@@ -96,7 +96,7 @@ html, body {
 }
 
 header {
-  background-color: rgba(247, 195, 176, 0.466);
+  background-color: #f0efe9;
   padding: 16px;
 }
 header .container {
@@ -200,8 +200,15 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 
 .showcase {
-  background-color: rgba(247, 195, 176, 0.466);
-  padding-bottom: 60px;
+  background-color: #f0efe9;
+  padding-bottom: 120px;
+  position: relative;
+  z-index: 0;
+}
+.showcase .background-lines {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
 }
 .showcase .container {
   display: flex;
@@ -345,4 +352,36 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .project-and-case .container .center-content {
   margin-top: 50px;
   margin-bottom: 90px;
+}
+
+.newsletter {
+  background-color: #f0efe9;
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+.newsletter .background-lines-right {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+.newsletter .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.newsletter .container h2 {
+  font-family: "DM sans", sans-serif;
+  font-size: 45px;
+  font-weight: 700;
+}
+.newsletter .container form input {
+  color: #191919;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 25px;
+  outline: none;
+  border: 1px solid #dad9d3;
+  margin-right: 20px;
 }/*# sourceMappingURL=style.css.map */
