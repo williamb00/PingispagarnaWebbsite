@@ -384,4 +384,21 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   outline: none;
   border: 1px solid #dad9d3;
   margin-right: 20px;
+}
+
+.meet-our-team .container .section-title {
+  padding-top: 70px;
+  padding-bottom: 45px;
+}
+.meet-our-team .container .meet-our-team-members {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+.meet-our-team .container .members {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  color: #191919;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
