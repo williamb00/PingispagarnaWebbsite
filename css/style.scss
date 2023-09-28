@@ -446,24 +446,130 @@ gap: 70px;
 }
 
 .meet-our-team {
+    background-color: #edcf87;
     .container {
+        position: relative;
+        height: 1400px;
+        
         .section-title {
-            //text-align: center;
             padding-top: 70px;
             padding-bottom: 45px;
 
         }
+
+        .dot-container {
+            display: flex;
+            position: absolute;
+            justify-content: center;
+            align-items: center;
+            top: 56%; /* Placera prickarna i mitten vertikalt */
+            left: 50%; /* Placera prickarna i mitten horisontellt */
+            transform: translate(-50%, -50%); /* Centrera prickarna korrekt */
+            
+        }
+
+        .dot {
+            width: 10px; /* Justera bredden efter behov */
+            height: 10px; /* Justera höjden efter behov */
+            background-color: #C3AB71; /* Svart färg */
+            border-radius: 50%; /* Gör den rund */
+            margin: 0 5px; /* Avstånd mellan prickarna */
+        }
+    
+        .black-dot {
+            background-color: #191919; /* Ändra bakgrundsfärgen till röd */
+            /* Andra stilar för den röda punkten om det behövs */
+        }
+
+    
         .meet-our-team-members {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             gap: 30px;
+            
+        }
+        .btn-red {
+            position: absolute; /* Sätt position: absolute på knappen */
+            top: 100px; /* Placera knappen längst upp */
+            right: 0; /* Placera knappen längst till höger */
         }
         .members {
             display: grid;
+            justify-content: space-between;
                 grid-template-columns: 1fr;
                 grid-template-rows: auto 1fr auto;
                 color: #191919;
                 text-decoration: none;
+                position: relative;
+
+                h3 {
+                    font-family: 'DM Sans';
+                    font-weight: 700;
+                    font-size: 22px;
+                    padding-top: 30px;
+                    padding-bottom: 10px;
+                   
+    
+                    }
+                    p {
+                    font-family: 'inter';
+                    font-size: 16px;
+                    color: rgba(25,25,25,0.6980392156862745 );
+        
+                    }
         }
     }
 }
+
+.testimonial {
+    height: 500px; /* Justera höjden efter behov */
+    width: 95%; /* Justera bredden efter behov */
+            background-color: #ffffff;
+            margin: 100px auto; /* Centrera horisontellt */
+            text-align: center; /* Centrera innehållet vertikalt */
+            padding: 50px;
+            padding-top: 50px;
+            justify-content: flex-start;
+            display: flex;
+            flex-direction: column;
+
+            .section-title {
+                align-self: center;
+            
+                
+            }
+
+            .testimonial-content {
+                display: grid;
+                
+                grid-column-gap: 20px;
+                text-align: center;
+            }
+
+            .stars {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr; /* Dela upp i tre fraktioner */
+                grid-row-gap: 60px;
+
+                .star-group {
+                    grid-template-columns: 1fr 1fr 1fr;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    p {
+                        font-size: 16px;
+    margin: 0;
+                    }
+                }
+                
+                
+            }
+             
+}
+
+
+        
+
+    
+    
