@@ -514,27 +514,32 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 
 .consulting-agency {
-  height: 650px;
+  height: 800px;
   padding-top: 60px;
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr; /* Två kolumner i 1:1 förhållande */
   width: 100%;
 }
+.consulting-agency .section-title-consulting-agency {
+  text-align: left;
+}
 .consulting-agency .section-title-consulting-agency h3 {
   font-family: "DM Sans", sans-serif;
-  font-weight: 700;
-  font-size: 45px;
+  font-weight: 600;
+  font-size: 55px;
 }
-.consulting-agency .section-title-consulting-agency p {
+.consulting-agency .section-title-consulting-agency h6 {
   font-family: "inter";
   font-size: 18px;
   color: #f94d1c;
 }
 .consulting-agency .container {
   background-color: #f0efe9;
-  position: flex;
-  padding: 0px 70px;
+  position: flex-end;
+  width: 100%;
+  height: 80%;
+  top: 150px;
 }
 .consulting-agency .left-grid {
   display: flex;
@@ -542,6 +547,33 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   flex: 1;
   padding-right: 0px;
   padding-left: 90px;
+}
+.consulting-agency .left-grid .icon-text-container {
+  display: flex;
+  flex-direction: column; /* Visa ikonerna och texten i en rad */
+  align-items: center; /* Centrera innehållet vertikalt */
+  text-align: center;
+  gap: 20px; /* Avstånd mellan ikonerna och texten */
+  padding: 40px 80px;
+}
+.consulting-agency .left-grid .icon-text-item {
+  display: flex;
+  align-items: center; /* Centrera innehållet vertikalt */
+  text-align: center; /* Centrera texten horisontellt */
+  margin-bottom: 10px;
+}
+.consulting-agency .left-grid .text-content {
+  text-align: left; /* Centrera textinnehållet horisontellt */
+  margin-top: 10px; /* Avstånd mellan <p> och <h5> */
+  margin-left: 20px;
+}
+.consulting-agency .left-grid .section-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 20px;
+  margin-left: 120px;
 }
 .consulting-agency .left-grid p {
   font-family: "DM Sans";
@@ -558,10 +590,79 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   border-radius: 50%;
   border: 1px solid rgba(102, 102, 102, 0.4);
   padding: 5px;
+  margin-right: 10px;
 }
 .consulting-agency .right-grid {
   flex: 1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  z-index: 0;
+  position: relative;
+}
+.consulting-agency .right-grid img {
+  position: relative;
+  right: 150px;
+  top: 0px;
+  bottom: 300px;
+}
+.consulting-agency .right-grid .container {
+  position: absolute;
+  top: 100;
+  left: 0;
+  right: 0;
+  bottom: 100px;
+  z-index: -1; /* Använd ett negativt z-index-värde för att placera den bakom */
+}
+
+.services {
+  height: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #F0EFE9;
+}
+
+p#top-left {
+  font-family: "inter";
+  font-size: 18px;
+  color: #f94d1c;
+}
+
+h1 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 55px;
+}
+
+/* Flexbox-stil för serviceboxarna */
+.service-boxes {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 70px;
+}
+
+.service-box {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  margin-right: 20px;
+  width: 308px;
+  height: 333px;
+}
+
+h2 {
+  font-size: 22px;
+  font-family: "dm sans";
+  color: #191919;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  color: rgba(25, 25, 25, 0.6980392157);
+  font-family: "inter";
 }/*# sourceMappingURL=style.css.map */

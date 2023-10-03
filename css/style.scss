@@ -600,7 +600,7 @@ gap: 70px;
 }
 
 .consulting-agency {
-    height: 650px;
+    height: 800px;
     padding-top: 60px;
     display: grid;
     align-items: center;
@@ -608,13 +608,15 @@ gap: 70px;
     //gap: 50px; /* Avstånd mellan rutnäten */
     width: 100%;
     .section-title-consulting-agency {
+        text-align: left;
+        
         h3 {
             font-family: 'DM Sans', sans-serif;
-            font-weight: 700;
-            font-size: 45px;
+            font-weight: 600;
+            font-size: 55px;
         }
     
-        p {
+        h6 {
             font-family: 'inter';
             font-size: 18px;
             color: #f94d1c;
@@ -623,8 +625,11 @@ gap: 70px;
 
     .container {
         background-color: #f0efe9;
-        position: flex;
-        padding: 0px 70px;
+        position: flex-end;
+        width: 100%;
+        height: 80%;
+        top: 150px;
+        
 
     }
 
@@ -634,6 +639,37 @@ gap: 70px;
         flex: 1;
         padding-right: 0px;
         padding-left: 90px;
+
+        .icon-text-container {
+            display: flex;
+            flex-direction: column; /* Visa ikonerna och texten i en rad */
+            align-items: center; /* Centrera innehållet vertikalt */
+            text-align: center;
+            gap: 20px; /* Avstånd mellan ikonerna och texten */
+            padding: 40px 80px;
+        }
+
+        .icon-text-item {
+            display: flex;
+            //flex-direction: column;
+            align-items: center; /* Centrera innehållet vertikalt */
+            text-align: center; /* Centrera texten horisontellt */
+            margin-bottom: 10px;
+        }
+        .text-content {
+            text-align: left; /* Centrera textinnehållet horisontellt */
+            margin-top: 10px; /* Avstånd mellan <p> och <h5> */
+            margin-left: 20px;
+
+        }
+        .section-title-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            padding: 20px;
+            margin-left: 120px;
+        }
     
     p {
         font-family: 'DM Sans';
@@ -653,19 +689,93 @@ gap: 70px;
         border-radius: 50%; 
         border: 1px solid #6666;
         padding: 5px;
+        margin-right: 10px;
     }
 }
 .right-grid {
     flex: 1;
     display: flex;
-    //margin-left: 100px;
-    //margin-right: 100px;
     justify-content: flex-end;
     align-items: center;
+    z-index: 0;
+    position: relative;
+
+    img {
+        position: relative;
+        right: 150px;
+        top: 0px;
+        bottom: 300px;
+    }
+}
+
+.right-grid .container {
+    position: absolute;
+    top: 100;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+    z-index: -1; /* Använd ett negativt z-index-värde för att placera den bakom */
 }
 
    
     }
+
+.services {
+    
+    height: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #F0EFE9;
+    //z-index: 1;
+}
+
+
+p#top-left {
+    font-family: 'inter';
+            font-size: 18px;
+            color: #f94d1c;
+}
+
+h1 {
+    font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            font-size: 55px;
+}
+
+/* Flexbox-stil för serviceboxarna */
+.service-boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 70px;
+}
+
+.service-box {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    margin-right: 20px;
+    width: 308px;
+    height: 333px;
+}
+
+h2 {
+    font-size: 22px;
+    font-family: 'dm sans';
+    color: #191919;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    color: rgba(25,25,25,0.6980392156862745 );
+    font-family: 'inter';
+}
+
+
 
 
 
