@@ -511,4 +511,57 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .testimonial .center-content {
   margin-top: 10px;
   margin-bottom: 25px;
+}
+
+.consulting-agency {
+  height: 650px;
+  padding-top: 60px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr; /* Två kolumner i 1:1 förhållande */
+  width: 100%;
+}
+.consulting-agency .section-title-consulting-agency h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+.consulting-agency .section-title-consulting-agency p {
+  font-family: "inter";
+  font-size: 18px;
+  color: #f94d1c;
+}
+.consulting-agency .container {
+  background-color: #f0efe9;
+  position: flex;
+  padding: 0px 70px;
+}
+.consulting-agency .left-grid {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-right: 0px;
+  padding-left: 90px;
+}
+.consulting-agency .left-grid p {
+  font-family: "DM Sans";
+  color: #191919;
+  font-size: 22px;
+  font-weight: 700;
+}
+.consulting-agency .left-grid h5 {
+  font-family: "inter";
+  font-size: 16px;
+  color: rgba(25, 25, 25, 0.6980392157);
+}
+.consulting-agency .left-grid img {
+  border-radius: 50%;
+  border: 1px solid rgba(102, 102, 102, 0.4);
+  padding: 5px;
+}
+.consulting-agency .right-grid {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
