@@ -615,35 +615,45 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   z-index: -1; /* Använd ett negativt z-index-värde för att placera den bakom */
 }
 
-.services {
-  height: 800px;
+.service-consulting {
+  height: 890px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+  flex-direction: column;
   background-color: #F0EFE9;
+  /* Flexbox-stil för serviceboxarna */
+  /* Justera storlek och färg på pilen */
+  /* Stil för .btn-black */
 }
-
-p#top-left {
+.service-consulting .service-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 80px;
+}
+.service-consulting .service-header p#top-left {
   font-family: "inter";
   font-size: 18px;
   color: #f94d1c;
+  padding-left: 75px;
 }
-
-h1 {
+.service-consulting .service-header h1 {
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: 55px;
+  padding-left: 75px;
+  width: 40%;
 }
-
-/* Flexbox-stil för serviceboxarna */
-.service-boxes {
-  display: flex;
+.service-consulting .service-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-content: space-between;
   padding: 100px 70px;
+  position: relative;
 }
-
-.service-box {
+.service-consulting .service-boxes .service-box:nth-child(2) {
+  background-color: #edcf87; /* Byt ut denna färg till din önskade färg */
+}
+.service-consulting .service-box {
   flex: 1;
   border: 1px solid #ddd;
   padding: 20px;
@@ -652,17 +662,58 @@ h1 {
   margin-right: 20px;
   width: 308px;
   height: 333px;
+  margin-bottom: 80px;
+  position: relative;
 }
-
-h2 {
+.service-consulting .service-box::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 27px;
+  width: 13%;
+  height: 2px;
+  background-color: black; /* Ändra färgen här om så önskas */
+}
+.service-consulting h2 {
   font-size: 22px;
   font-family: "dm sans";
   color: #191919;
   font-weight: 700;
+  text-align: left;
+  padding: 8px;
+  margin-top: 60px;
 }
-
-p {
+.service-consulting p {
   font-size: 16px;
   color: rgba(25, 25, 25, 0.6980392157);
   font-family: "inter";
+  text-align: left;
+  padding: 8px;
+}
+.service-consulting .arrow-icon {
+  position: absolute;
+  bottom: 50px; /* Justera avståndet från botten här */
+  right: 30px; /* Justera avståndet från höger här */
+  display: inline-block;
+  padding: 12px;
+  border-radius: 50%; /* Skapar en rund bakgrund */
+  background-color: #0e0d0d; /* Bakgrundsfärgen runt pilen */
+}
+.service-consulting .fa-arrow-right {
+  font-size: 25px;
+}
+.service-consulting .btn-transparent {
+  display: flex;
+  justify-content: center; /* Centrera innehållet horisontellt */
+  align-items: center;
+  margin-left: auto;
+  position: absolute;
+  bottom: 95px; /* Justera detta för att placera knappen längst ner */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.service-consulting .container img {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }/*# sourceMappingURL=style.css.map */
