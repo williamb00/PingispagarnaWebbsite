@@ -716,4 +716,97 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   position: absolute;
   bottom: 0px;
   right: 0px;
+}
+
+.about-our-company {
+  height: 600px;
+}
+.about-our-company .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 100px;
+  margin-top: 180px;
+}
+.about-our-company .left-section {
+  position: relative;
+  top: -50px;
+}
+.about-our-company .left-section p {
+  color: #191919;
+}
+.about-our-company .left-section h5 {
+  color: #191919;
+  font-weight: 700;
+}
+.about-our-company .left-section .founders-text {
+  color: #f94d1c;
+  font-weight: 500;
+}
+.about-our-company .image-overlay {
+  position: absolute;
+  bottom: 50px;
+  left: -15%;
+  align-items: center;
+  justify-content: center; /* Centrera vertikalt */
+  background-color: #beebff;
+  color: white;
+  padding: 10px;
+  height: 150px;
+  width: 70%;
+  margin: auto;
+}
+.about-our-company .image-overlay h5,
+.about-our-company .image-overlay p {
+  margin: 5px; /* Ta bort standardmarginaler för p och h5 */
+}
+.about-our-company .image-overlay p {
+  margin-top: 20px; /* Lite utrymme mellan h5 och p */
+}
+.about-our-company .right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 100px;
+  position: relative;
+  top: -50px;
+}
+.about-our-company .button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40px;
+}
+.about-our-company .btn-black {
+  margin-right: 40px; /* Justera detta avstånd efter behov */
+}
+.about-our-company .circle-play-container {
+  display: flex;
+  align-items: center;
+}
+.about-our-company .fa-circle-play {
+  color: #191919;
+  font-size: 24px;
+  margin-right: 5px;
+}
+.about-our-company .intro-video-text {
+  color: #191919;
+  font-size: 18px;
+}
+.about-our-company .about-company {
+  font-size: 18px;
+  font-family: "inter";
+  color: #f94d1c;
+}
+.about-our-company .company-name {
+  font-size: 45px;
+  font-weight: 600;
+  font-family: "dm sans";
+  width: 70%;
+}
+.about-our-company .small-text {
+  font-size: 14px;
+  margin-top: 10px;
+  color: rgba(25, 25, 25, 0.6980392157);
+  width: 70%;
 }/*# sourceMappingURL=style.css.map */
