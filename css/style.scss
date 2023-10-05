@@ -17,7 +17,6 @@ html, body {
 
 .btn-red {
     background-color: #f9d783;
-    border: 1px solid #191919;
     color: #191919;
     text-decoration: none;
     padding: 10px 30px;
@@ -34,6 +33,7 @@ html, body {
         background-color: #191919;
         border: 1px solid #191919;
         color: #ffffff;
+        transition: background-color 0.3s ease;
     }
 }
 
@@ -56,6 +56,7 @@ html, body {
         background-color: #ffffff;
         border: 1px solid #191919;
         color: #191919;
+        transition: background-color 0.3s ease;
     }
 }
 
@@ -78,6 +79,7 @@ html, body {
         background-color: #191919;
         border: 1px solid #191919;
         color: #ffffff;
+        transition: background-color 0.3s ease;
     }
 }
 
@@ -930,12 +932,14 @@ top: -50px;
 .fa-circle-play {
     color: #191919;
     font-size: 24px;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 
 .intro-video-text {
     color: #191919;
     font-size: 18px;
+    font-family: 'dm sans';
+    font-weight: 600;
 }
 
 .about-company {
@@ -948,7 +952,8 @@ top: -50px;
     font-size: 45px;
     font-weight: 600;
     font-family: 'dm sans';
-    width: 70%;
+    width: 90%;
+    
 }
 
 .small-text {
@@ -959,6 +964,147 @@ top: -50px;
 }
 
 }
+
+.features {
+height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+   justify-content: space-around;
+   border: 2px solid #191919;
+   padding: 100px;
+   gap: 20px;
+   box-sizing: border-box;
+   
+
+    .container1 {
+
+        width: 100%;
+        padding-bottom: 130px;
+        justify-content: center;
+        p {
+            font-family: 'inter';
+            font-size: 18px;
+            color: #f94d1c;
+        }
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            font-size: 44px;
+            margin-bottom: 20px;
+        }
+        .btn-red {
+            display: inline-block; /* Gör knappen till en blocknivå-element för att ändra bredden */
+            padding: 10px 120px; /* Justera padding för att ändra bredden */
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+        
+    }
+
+    .container2 {
+        width: 60%;
+        padding: 20px;
+        justify-content: center;
+
+        .profile-1 {
+        img {
+        margin-bottom: 20px;
+        }
+        h5 {
+        margin-bottom: 20px;
+        font-family: 'dm sans';
+        font-weight: 700;
+        font-size: 22px;
+        color: #191919;
+        }
+        p {
+        margin-bottom: 10px;
+        font-family: 'inter';
+        font-size: 16px;
+        color: rgba(25,25,25,0.6980392156862745 );
+
+        }
+    }
+
+.profile-2 {
+    
+    img {
+        margin-bottom: 20px;
+                }
+                h5 {
+        margin-bottom: 20px;
+        font-family: 'dm sans';
+            font-weight: 700;
+        font-size: 22px;
+        color: #191919;
+                }
+                p {
+        margin-bottom: 10px;
+        font-family: 'inter';
+        font-size: 16px;
+        color: rgba(25,25,25,0.6980392156862745 );
+                }
+
+}
+
+    }
+
+
+    .container3 {
+        
+        width: 60%;
+        padding: 20px;
+        justify-content: center;
+
+
+        .profile-3 {
+            img {
+                        margin-bottom: 20px;
+            }
+            h5 {
+                font-family: 'dm sans';
+                font-weight: 700;
+                font-size: 22px;
+                color: #191919;
+                margin-bottom: 20px;
+            }
+            p {
+                margin-bottom: 10px;
+                font-family: 'inter';
+                font-size: 16px;
+                color: rgba(25,25,25,0.6980392156862745 );
+            }
+        }
+    
+    .profile-4 {
+        
+        img {
+            margin-bottom: 20px;
+                    }
+                    h5 {
+            margin-bottom: 20px;
+            font-family: 'dm sans';
+            font-weight: 700;
+            font-size: 22px;
+            color: #191919;
+                    }
+                    p {
+            margin-bottom: 10px;
+            font-family: 'inter';
+            font-size: 16px;
+            color: rgba(25,25,25,0.6980392156862745 );
+                    }
+    
+    }
+
+    }
+
+}
+
+
+
+
 
 
 

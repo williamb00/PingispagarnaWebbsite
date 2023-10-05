@@ -17,7 +17,6 @@ html, body {
 
 .btn-red {
   background-color: #f9d783;
-  border: 1px solid #191919;
   color: #191919;
   text-decoration: none;
   padding: 10px 30px;
@@ -33,6 +32,7 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #ffffff;
+  transition: background-color 0.3s ease;
 }
 
 .btn-black {
@@ -53,6 +53,7 @@ html, body {
   background-color: #ffffff;
   border: 1px solid #191919;
   color: #191919;
+  transition: background-color 0.3s ease;
 }
 
 .btn-transparent {
@@ -73,6 +74,7 @@ html, body {
   background-color: #191919;
   border: 1px solid #191919;
   color: #ffffff;
+  transition: background-color 0.3s ease;
 }
 
 .section-title {
@@ -787,11 +789,13 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .about-our-company .fa-circle-play {
   color: #191919;
   font-size: 24px;
-  margin-right: 5px;
+  margin-right: 8px;
 }
 .about-our-company .intro-video-text {
   color: #191919;
   font-size: 18px;
+  font-family: "dm sans";
+  font-weight: 600;
 }
 .about-our-company .about-company {
   font-size: 18px;
@@ -802,11 +806,119 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   font-size: 45px;
   font-weight: 600;
   font-family: "dm sans";
-  width: 70%;
+  width: 90%;
 }
 .about-our-company .small-text {
   font-size: 14px;
   margin-top: 10px;
   color: rgba(25, 25, 25, 0.6980392157);
   width: 70%;
+}
+
+.features {
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid #191919;
+  padding: 100px;
+  gap: 20px;
+  box-sizing: border-box;
+}
+.features .container1 {
+  width: 100%;
+  padding-bottom: 130px;
+  justify-content: center;
+}
+.features .container1 p {
+  font-family: "inter";
+  font-size: 18px;
+  color: #f94d1c;
+}
+.features .container1 h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+.features .container1 .btn-red {
+  display: inline-block; /* Gör knappen till en blocknivå-element för att ändra bredden */
+  padding: 10px 120px; /* Justera padding för att ändra bredden */
+  border: none;
+  transition: background-color 0.3s ease;
+}
+.features .container2 {
+  width: 60%;
+  padding: 20px;
+  justify-content: center;
+}
+.features .container2 .profile-1 img {
+  margin-bottom: 20px;
+}
+.features .container2 .profile-1 h5 {
+  margin-bottom: 20px;
+  font-family: "dm sans";
+  font-weight: 700;
+  font-size: 22px;
+  color: #191919;
+}
+.features .container2 .profile-1 p {
+  margin-bottom: 10px;
+  font-family: "inter";
+  font-size: 16px;
+  color: rgba(25, 25, 25, 0.6980392157);
+}
+.features .container2 .profile-2 img {
+  margin-bottom: 20px;
+}
+.features .container2 .profile-2 h5 {
+  margin-bottom: 20px;
+  font-family: "dm sans";
+  font-weight: 700;
+  font-size: 22px;
+  color: #191919;
+}
+.features .container2 .profile-2 p {
+  margin-bottom: 10px;
+  font-family: "inter";
+  font-size: 16px;
+  color: rgba(25, 25, 25, 0.6980392157);
+}
+.features .container3 {
+  width: 60%;
+  padding: 20px;
+  justify-content: center;
+}
+.features .container3 .profile-3 img {
+  margin-bottom: 20px;
+}
+.features .container3 .profile-3 h5 {
+  font-family: "dm sans";
+  font-weight: 700;
+  font-size: 22px;
+  color: #191919;
+  margin-bottom: 20px;
+}
+.features .container3 .profile-3 p {
+  margin-bottom: 10px;
+  font-family: "inter";
+  font-size: 16px;
+  color: rgba(25, 25, 25, 0.6980392157);
+}
+.features .container3 .profile-4 img {
+  margin-bottom: 20px;
+}
+.features .container3 .profile-4 h5 {
+  margin-bottom: 20px;
+  font-family: "dm sans";
+  font-weight: 700;
+  font-size: 22px;
+  color: #191919;
+}
+.features .container3 .profile-4 p {
+  margin-bottom: 10px;
+  font-family: "inter";
+  font-size: 16px;
+  color: rgba(25, 25, 25, 0.6980392157);
 }/*# sourceMappingURL=style.css.map */
