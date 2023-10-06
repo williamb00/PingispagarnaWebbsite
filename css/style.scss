@@ -235,7 +235,6 @@ gap: 70px;
 
 }
 
-
 .showcase {
     background-color: #f0efe9;
     padding-bottom: 120px;
@@ -413,10 +412,11 @@ gap: 70px;
     position: relative;
     padding-top: 80px;
     padding-bottom: 90px;
+    
 
     .background-lines-right {
         position: absolute;
-        bottom: 0px;
+        bottom: 20px;
         right: 0;
     }
     .container {
@@ -490,7 +490,7 @@ gap: 70px;
             gap: 30px;
             
         }
-        .btn-red {
+        .btn-transparent {
             position: absolute; /* Sätt position: absolute på knappen */
             top: 100px; /* Placera knappen längst upp */
             right: 0; /* Placera knappen längst till höger */
@@ -649,11 +649,13 @@ gap: 70px;
             text-align: center;
             gap: 20px; /* Avstånd mellan ikonerna och texten */
             padding: 40px 80px;
+            
         }
 
         .icon-text-item {
             display: flex;
             //flex-direction: column;
+            text-decoration: none;
             align-items: center; /* Centrera innehållet vertikalt */
             text-align: center; /* Centrera texten horisontellt */
             margin-bottom: 10px;
@@ -704,7 +706,7 @@ gap: 70px;
 
     img {
         position: relative;
-        right: 150px;
+        right: 130px;
         top: 0px;
         bottom: 300px;
     }
@@ -927,6 +929,7 @@ top: -50px;
 .circle-play-container {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .fa-circle-play {
@@ -982,7 +985,7 @@ height: 500px;
     height: 550px;
     margin-left: 140px;
     margin-right: 80px;
-    margin-top: 50px;
+    margin-top: 20px;
     
    
 
@@ -1018,6 +1021,7 @@ height: 500px;
         justify-content: center;
 
         .profile-1 {
+            text-decoration: none;
         img {
         margin-bottom: 20px;
         }
@@ -1038,7 +1042,7 @@ height: 500px;
     }
 
 .profile-2 {
-    
+    text-decoration: none;
     img {
         margin-bottom: 20px;
                 }
@@ -1069,42 +1073,43 @@ height: 500px;
 
 
         .profile-3 {
+            text-decoration: none;
             img {
-                        margin-bottom: 20px;
+            margin-bottom: 20px;
             }
             h5 {
-                font-family: 'dm sans';
-                font-weight: 700;
-                font-size: 22px;
-                color: #191919;
-                margin-bottom: 20px;
+            font-family: 'dm sans';
+            font-weight: 700;
+            font-size: 22px;
+            color: #191919;
+            margin-bottom: 20px;
             }
             p {
-                margin-bottom: 10px;
-                font-family: 'inter';
-                font-size: 16px;
-                color: rgba(25,25,25,0.6980392156862745 );
+            margin-bottom: 10px;
+            font-family: 'inter';
+            font-size: 16px;
+            color: rgba(25,25,25,0.6980392156862745 );
             }
         }
     
     .profile-4 {
-        
+        text-decoration: none;
         img {
             margin-bottom: 20px;
-                    }
-                    h5 {
+             }
+            h5 {
             margin-bottom: 20px;
             font-family: 'dm sans';
             font-weight: 700;
             font-size: 22px;
             color: #191919;
-                    }
-                    p {
+            }
+            p {
             margin-bottom: 10px;
             font-family: 'inter';
             font-size: 16px;
             color: rgba(25,25,25,0.6980392156862745 );
-                    }
+            }
     
     }
 
@@ -1112,6 +1117,142 @@ height: 500px;
 }
 }
 
+.companies {
+    display: grid;
+    place-items: center; 
+    height: 250px;
+    gap: 50px; 
+
+
+.Logos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 90px; 
+}
+}
+
+.Article-and-News {
+    height: 800px;
+    .header-text {
+        p {
+            font-family: 'inter';
+            font-size: 18px;
+            color: #f94d1c;
+        }
+        h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            font-size: 44px;
+            margin-bottom: 20px;
+        }
+        text-align: left;
+        grid-column: span 3; /* Få header-text att omfatta alla tre kolumner */
+        margin-bottom: 0px; /* Justera om det behövs */
+    }
+    .article-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+        padding: 120px;
+        //margin-bottom: 150px;
+    }
+    
+    /* Enskild artikel */
+    .article {
+        text-align: left;
+        text-decoration: none;
+        //padding: 90px;
+        
+    }
+    
+    /* Bildstil (storlek och maxbredd) */
+    .article img {
+        width: 420px;
+        height: 230px;
+    }
+    
+    /* Rubrik 6 (h6) */
+    .article h6 {
+        font-size: 22px;
+        margin: 10px 0;
+        width: 75%;
+        color: #191919;
+        font-family: 'dm sans';
+        font-weight: 700;
+    }
+    
+    /* Ytterligare stil för övrig text */
+    .article p {
+        font-size: 16px;
+        margin: 15px 0;
+        color: #6a6c71;
+        font-family: 'inter';
+    }
+
+    .image-container {
+        position: relative; /* För att skapa en relativ position för barnen */
+    }
+    
+    /* Den gula boxen */
+    .yellow-box {
+        position: absolute; /* Placera den relativt till föräldern (.image-container) */
+        bottom: 20px;
+        left: 15px;
+        background-color: #f9d783;
+        width: 56px; /* Justera bredden efter behov */
+        height: 64px; /* Justera höjden efter behov */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .date {
+        font-size: 22px;
+        font-weight: 500;
+        font-family: 'dm sans';
+        color: #191919;
+    }
+    
+    .month {
+        font-size: 16px;
+        font-family: 'inter';
+        color: rgba(25,25,25,0.6980392156862745 );
+
+    }
+
+    .btn-transparent {
+        position: relative; /* Sätt position: absolute på knappen */
+        bottom: 520px; /* Placera knappen längst upp */
+        right: 0; /* Placera knappen längst till höger */
+        left: 1090px;
+        width: 50%;
+    }
+
+    .dot-container {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        top: 45%; /* Placera prickarna i mitten vertikalt */
+        left: 50%; /* Placera prickarna i mitten horisontellt */
+        transform: translate(-50%, -50%); /* Centrera prickarna korrekt */
+        
+    }
+
+    .dot {
+        width: 10px; /* Justera bredden efter behov */
+        height: 10px; /* Justera höjden efter behov */
+        background-color: #D1D1D1; /* Svart färg */
+        border-radius: 50%; /* Gör den rund */
+        margin: 0 5px; /* Avstånd mellan prickarna */
+    }
+
+    .black-dot {
+        background-color: #191919; /* Ändra bakgrundsfärgen till röd */
+        /* Andra stilar för den röda punkten om det behövs */
+    }
+
+}
 
 
 

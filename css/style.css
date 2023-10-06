@@ -365,7 +365,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 .newsletter .background-lines-right {
   position: absolute;
-  bottom: 0px;
+  bottom: 20px;
   right: 0;
 }
 .newsletter .container {
@@ -425,7 +425,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
 }
-.meet-our-team .container .btn-red {
+.meet-our-team .container .btn-transparent {
   position: absolute; /* Sätt position: absolute på knappen */
   top: 100px; /* Placera knappen längst upp */
   right: 0; /* Placera knappen längst till höger */
@@ -560,6 +560,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 .consulting-agency .left-grid .icon-text-item {
   display: flex;
+  text-decoration: none;
   align-items: center; /* Centrera innehållet vertikalt */
   text-align: center; /* Centrera texten horisontellt */
   margin-bottom: 10px;
@@ -604,7 +605,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 }
 .consulting-agency .right-grid img {
   position: relative;
-  right: 150px;
+  right: 130px;
   top: 0px;
   bottom: 300px;
 }
@@ -785,6 +786,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .about-our-company .circle-play-container {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 .about-our-company .fa-circle-play {
   color: #191919;
@@ -832,7 +834,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   height: 550px;
   margin-left: 140px;
   margin-right: 80px;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .features .container-border .container1 {
   width: 120%;
@@ -862,6 +864,9 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   padding: 20px;
   justify-content: center;
 }
+.features .container-border .container2 .profile-1 {
+  text-decoration: none;
+}
 .features .container-border .container2 .profile-1 img {
   margin-bottom: 20px;
 }
@@ -877,6 +882,9 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   font-family: "inter";
   font-size: 16px;
   color: rgba(25, 25, 25, 0.6980392157);
+}
+.features .container-border .container2 .profile-2 {
+  text-decoration: none;
 }
 .features .container-border .container2 .profile-2 img {
   margin-bottom: 20px;
@@ -899,6 +907,9 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   padding: 20px;
   justify-content: center;
 }
+.features .container-border .container3 .profile-3 {
+  text-decoration: none;
+}
 .features .container-border .container3 .profile-3 img {
   margin-bottom: 20px;
 }
@@ -915,6 +926,9 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   font-size: 16px;
   color: rgba(25, 25, 25, 0.6980392157);
 }
+.features .container-border .container3 .profile-4 {
+  text-decoration: none;
+}
 .features .container-border .container3 .profile-4 img {
   margin-bottom: 20px;
 }
@@ -930,4 +944,122 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   font-family: "inter";
   font-size: 16px;
   color: rgba(25, 25, 25, 0.6980392157);
+}
+
+.companies {
+  display: grid;
+  place-items: center;
+  height: 250px;
+  gap: 50px;
+}
+.companies .Logos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 90px;
+}
+
+.Article-and-News {
+  height: 800px;
+  /* Enskild artikel */
+  /* Bildstil (storlek och maxbredd) */
+  /* Rubrik 6 (h6) */
+  /* Ytterligare stil för övrig text */
+  /* Den gula boxen */
+}
+.Article-and-News .header-text {
+  text-align: left;
+  grid-column: span 3; /* Få header-text att omfatta alla tre kolumner */
+  margin-bottom: 0px; /* Justera om det behövs */
+}
+.Article-and-News .header-text p {
+  font-family: "inter";
+  font-size: 18px;
+  color: #f94d1c;
+}
+.Article-and-News .header-text h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+.Article-and-News .article-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 120px;
+}
+.Article-and-News .article {
+  text-align: left;
+  text-decoration: none;
+}
+.Article-and-News .article img {
+  width: 420px;
+  height: 230px;
+}
+.Article-and-News .article h6 {
+  font-size: 22px;
+  margin: 10px 0;
+  width: 75%;
+  color: #191919;
+  font-family: "dm sans";
+  font-weight: 700;
+}
+.Article-and-News .article p {
+  font-size: 16px;
+  margin: 15px 0;
+  color: #6a6c71;
+  font-family: "inter";
+}
+.Article-and-News .image-container {
+  position: relative; /* För att skapa en relativ position för barnen */
+}
+.Article-and-News .yellow-box {
+  position: absolute; /* Placera den relativt till föräldern (.image-container) */
+  bottom: 20px;
+  left: 15px;
+  background-color: #f9d783;
+  width: 56px; /* Justera bredden efter behov */
+  height: 64px; /* Justera höjden efter behov */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.Article-and-News .date {
+  font-size: 22px;
+  font-weight: 500;
+  font-family: "dm sans";
+  color: #191919;
+}
+.Article-and-News .month {
+  font-size: 16px;
+  font-family: "inter";
+  color: rgba(25, 25, 25, 0.6980392157);
+}
+.Article-and-News .btn-transparent {
+  position: relative; /* Sätt position: absolute på knappen */
+  bottom: 520px; /* Placera knappen längst upp */
+  right: 0; /* Placera knappen längst till höger */
+  left: 1090px;
+  width: 50%;
+}
+.Article-and-News .dot-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 45%; /* Placera prickarna i mitten vertikalt */
+  left: 50%; /* Placera prickarna i mitten horisontellt */
+  transform: translate(-50%, -50%); /* Centrera prickarna korrekt */
+}
+.Article-and-News .dot {
+  width: 10px; /* Justera bredden efter behov */
+  height: 10px; /* Justera höjden efter behov */
+  background-color: #D1D1D1; /* Svart färg */
+  border-radius: 50%; /* Gör den rund */
+  margin: 0 5px; /* Avstånd mellan prickarna */
+}
+.Article-and-News .black-dot {
+  background-color: #191919; /* Ändra bakgrundsfärgen till röd */
+  /* Andra stilar för den röda punkten om det behövs */
 }/*# sourceMappingURL=style.css.map */
