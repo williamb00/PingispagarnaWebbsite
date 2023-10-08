@@ -362,6 +362,12 @@ gap: 70px;
 
                 img {
                     width: 100%;
+                    transition: transform 0.5s ease; 
+                
+                    &:hover {
+                        transform: scale(1.1); 
+                        
+                    }
                     @media (max-width: 992px) {
                         height: auto;
                     }
@@ -464,23 +470,23 @@ gap: 70px;
             position: absolute;
             justify-content: center;
             align-items: center;
-            top: 45%; /* Placera prickarna i mitten vertikalt */
-            left: 50%; /* Placera prickarna i mitten horisontellt */
-            transform: translate(-50%, -50%); /* Centrera prickarna korrekt */
+            top: 45%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
             
         }
 
         .dot {
-            width: 10px; /* Justera bredden efter behov */
-            height: 10px; /* Justera höjden efter behov */
-            background-color: #C3AB71; /* Svart färg */
-            border-radius: 50%; /* Gör den rund */
-            margin: 0 5px; /* Avstånd mellan prickarna */
+            width: 10px; 
+            height: 10px;
+            background-color: #C3AB71; 
+            border-radius: 50%; 
+            margin: 0 5px; 
         }
     
         .black-dot {
-            background-color: #191919; /* Ändra bakgrundsfärgen till röd */
-            /* Andra stilar för den röda punkten om det behövs */
+            background-color: #191919; 
+            
         }
 
     
@@ -491,9 +497,9 @@ gap: 70px;
             
         }
         .btn-transparent {
-            position: absolute; /* Sätt position: absolute på knappen */
-            top: 100px; /* Placera knappen längst upp */
-            right: 0; /* Placera knappen längst till höger */
+            position: absolute; 
+            top: 100px; 
+            right: 0; 
         }
         .members {
             display: grid;
@@ -503,6 +509,14 @@ gap: 70px;
                 color: #191919;
                 text-decoration: none;
                 position: relative;
+
+                &:hover {
+                    transform: scale(1.1); 
+                    transition: transform 0.8s ease; 
+                    h3 {
+                        text-decoration: underline;
+                    }
+                }
 
                 h3 {
                     font-family: 'DM Sans';
@@ -524,11 +538,11 @@ gap: 70px;
 }
 
 .testimonial {
-    height: 800px; /* Justera höjden efter behov */
-    width: 95%; /* Justera bredden efter behov */
+    height: 800px; 
+    width: 95%; 
             background-color: #ffffff;
-            margin: 100px auto; /* Centrera horisontellt */
-            text-align: center; /* Centrera innehållet vertikalt */
+            margin: 100px auto; 
+            text-align: center; 
             padding: 50px;
             padding-top: 50px;
             justify-content: flex-start;
@@ -559,7 +573,7 @@ gap: 70px;
 
             .stars {
                 display: flex;
-                grid-template-columns: 1fr 1fr 1fr; /* Dela upp i tre fraktioner */
+                grid-template-columns: 1fr 1fr 1fr; 
                 grid-row-gap: 100px;
                 
 
@@ -589,7 +603,7 @@ gap: 70px;
                         max-width: 100%;
                         height: auto;
                         display: flex;
-                        margin-top: 10px; /* Avstånd mellan text och profilbild */
+                        margin-top: 10px; 
                     }
                 }
                 
@@ -606,8 +620,8 @@ gap: 70px;
     padding-top: 60px;
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 1fr; /* Två kolumner i 1:1 förhållande */
-    //gap: 50px; /* Avstånd mellan rutnäten */
+    grid-template-columns: 1fr 1fr; 
+    
     width: 100%;
     .section-title-consulting-agency {
         text-align: left;
@@ -644,51 +658,51 @@ gap: 70px;
 
         .icon-text-container {
             display: flex;
-            flex-direction: column; /* Visa ikonerna och texten i en rad */
-            align-items: center; /* Centrera innehållet vertikalt */
+            flex-direction: column; 
+            align-items: center; 
             text-align: center;
-            gap: 20px; /* Avstånd mellan ikonerna och texten */
+            gap: 20px; 
             padding: 40px 80px;
             
         }
         
         a:hover {
             color: #191919;
-            //text-decoration: underline;
+            
         }
         .icon-text-item:hover p {
-            transform: scale(1.1); /* Ändra storleken efter behov */
+            transform: scale(1.1); 
             font-weight: 1200;
-            //text-decoration: underline;
+            
         }
         
-        /* Återställ texten till normal storlek när muspekaren inte längre hovrar över dem */
+
         .icon-text-item p {
-            transition: transform 0.3s ease; /* Smidig övergångseffekt */
+            transition: transform 0.3s ease;
         }
         .icon-text-item:hover h5 {
-            transform: scale(1.2); /* Ändra storleken efter behov */
+            transform: scale(1.2);
             font-weight: 1200;
-            //text-decoration: underline;
+            
         }
         
-        /* Återställ texten till normal storlek när muspekaren inte längre hovrar över dem */
+        
         .icon-text-item h5 {
-            transition: transform 0.3s ease; /* Smidig övergångseffekt */
+            transition: transform 0.3s ease; 
         }
 
         .icon-text-item {
             display: flex;
-            //flex-direction: column;
+            
             text-decoration: none;
-            align-items: center; /* Centrera innehållet vertikalt */
-            text-align: center; /* Centrera texten horisontellt */
+            align-items: center; 
+            text-align: center; 
             margin-bottom: 10px;
             
         }
         .text-content {
-            text-align: left; /* Centrera textinnehållet horisontellt */
-            margin-top: 10px; /* Avstånd mellan <p> och <h5> */
+            text-align: left; 
+            margin-top: 10px; 
             margin-left: 20px;
 
         }
@@ -744,7 +758,7 @@ gap: 70px;
     left: 0;
     right: 0;
     bottom: 100px;
-    z-index: -1; /* Använd ett negativt z-index-värde för att placera den bakom */
+    z-index: -1; 
 }
 
    
@@ -778,7 +792,7 @@ p#top-left {
             font-size: 18px;
             color: #f94d1c;
             padding-left: 75px;
-            //padding-top: 90px;
+            
 }
 
 h1 {
@@ -790,22 +804,26 @@ h1 {
 }
 }
 
-/* Flexbox-stil för serviceboxarna */
+
 .service-boxes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     padding: 100px 70px;
     position: relative;
-    //flex-wrap: wrap;
+    
 
 }
 
 .service-boxes .service-box:nth-child(2) {
-    background-color: #edcf87; /* Byt ut denna färg till din önskade färg */
+    background-color: #edcf87; 
 }
 
-
+.service-box:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); 
+    z-index: 1; 
+}
 
 .service-box {
     flex: 1;
@@ -827,7 +845,7 @@ h1 {
     left: 27px;
     width: 13%;
     height: 2px;
-    background-color: black; /* Ändra färgen här om så önskas */
+    background-color: black; 
 }
 
 h2 {
@@ -850,29 +868,29 @@ p {
 
 .arrow-icon {
     position: absolute;
-    bottom: 50px; /* Justera avståndet från botten här */
-    right: 30px; /* Justera avståndet från höger här */
+    bottom: 50px; 
+    right: 30px; 
     display: inline-block;
     padding: 12px;
-    border-radius: 50%; /* Skapar en rund bakgrund */
-    background-color: #0e0d0d; /* Bakgrundsfärgen runt pilen */
+    border-radius: 50%; 
+    background-color: #0e0d0d; 
 
 }
 
-/* Justera storlek och färg på pilen */
+
 .fa-arrow-right {
     font-size: 25px;
 }
 
 
-/* Stil för .btn-black */
+
 .btn-transparent {
     display: flex;
-    justify-content: center; /* Centrera innehållet horisontellt */
+    justify-content: center; 
     align-items: center;
     margin-left: auto;
     position: absolute;
-    bottom: 95px; /* Justera detta för att placera knappen längst ner */
+    bottom: 95px; 
     left: 50%;
     transform: translateX(-50%);
 }
@@ -883,7 +901,6 @@ p {
     bottom: 0px;
     right: 0px;
 }
-
 
 }
 
@@ -920,7 +937,7 @@ top: -50px;
     bottom: 50px;
     left: -15%;
     align-items: center;
-    justify-content: center; /* Centrera vertikalt */
+    justify-content: center; 
     background-color: #beebff;
     color: white;
     padding: 10px;
@@ -932,11 +949,11 @@ top: -50px;
 
 .image-overlay h5,
 .image-overlay p {
-    margin: 5px; /* Ta bort standardmarginaler för p och h5 */
+    margin: 5px; 
 }
 
 .image-overlay p {
-    margin-top: 20px; /* Lite utrymme mellan h5 och p */
+    margin-top: 20px; 
 
 }
 
@@ -959,19 +976,26 @@ top: -50px;
 }
 
 .btn-black {
-    margin-right: 40px; /* Justera detta avstånd efter behov */
+    margin-right: 40px; 
 }
 
 .circle-play-container {
     display: flex;
     align-items: center;
     text-decoration: none;
+    
+}
+
+.circle-play-container:hover .intro-video-text {
+    font-size: 26px; 
 }
 
 .fa-circle-play {
     color: #191919;
     font-size: 24px;
     margin-right: 8px;
+
+    
 }
 
 .intro-video-text {
@@ -979,6 +1003,7 @@ top: -50px;
     font-size: 18px;
     font-family: 'dm sans';
     font-weight: 600;
+
 }
 
 .about-company {
@@ -1022,8 +1047,6 @@ height: 500px;
     margin-left: 140px;
     margin-right: 80px;
     margin-top: 20px;
-    
-    
 
     .container1 {
 
@@ -1043,8 +1066,8 @@ height: 500px;
             margin-bottom: 20px;
         }
         .btn-red {
-            display: inline-block; /* Gör knappen till en blocknivå-element för att ändra bredden */
-            padding: 10px 120px; /* Justera padding för att ändra bredden */
+            display: inline-block; 
+            padding: 10px 120px; 
             border: none;
             transition: background-color 0.3s ease;
         }
@@ -1100,7 +1123,6 @@ height: 500px;
 a:hover {
     color: #191919;
     text-decoration: underline;
-    transform: scale(1.2); /* Ändra storleken efter behov */
 }
 
     }
@@ -1195,42 +1217,41 @@ a:hover {
             margin-bottom: 20px;
         }
         text-align: left;
-        grid-column: span 3; /* Få header-text att omfatta alla tre kolumner */
-        margin-bottom: 0px; /* Justera om det behövs */
+        grid-column: span 3; 
+        margin-bottom: 0px; 
     }
     .article-grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 20px;
         padding: 120px;
-        //margin-bottom: 150px;
+        
     }
     
-    /* Enskild artikel */
+    
     .article {
         text-align: left;
         text-decoration: none;
-        //padding: 90px;
+        
 
     }
     
-    /* Bildstil (storlek och maxbredd) */
     .article img {
         width: 420px;
         height: 230px;
         
     }
     .article:hover h6 {
-        transform: scale(1.1); /* Ändra storleken efter behov */
+        transform: scale(1.1); 
         font-weight: 1200;
         text-decoration: underline;
     }
     
-    /* Återställ texten till normal storlek när muspekaren inte längre hovrar över dem */
+    
     .article h6 {
-        transition: transform 0.3s ease; /* Smidig övergångseffekt */
+        transition: transform 0.3s ease; 
     }
-    /* Rubrik 6 (h6) */
+    
     .article h6 {
         font-size: 22px;
         margin: 10px 0;
@@ -1240,7 +1261,7 @@ a:hover {
         font-weight: 700;
     }
     
-    /* Ytterligare stil för övrig text */
+   
     .article p {
         font-size: 16px;
         margin: 15px 0;
@@ -1249,17 +1270,17 @@ a:hover {
     }
 
     .image-container {
-        position: relative; /* För att skapa en relativ position för barnen */
+        position: relative;
     }
     
-    /* Den gula boxen */
+  
     .yellow-box {
-        position: absolute; /* Placera den relativt till föräldern (.image-container) */
+        position: absolute; 
         bottom: 20px;
         left: 15px;
         background-color: #f9d783;
-        width: 56px; /* Justera bredden efter behov */
-        height: 64px; /* Justera höjden efter behov */
+        width: 56px; 
+        height: 64px; 
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1280,9 +1301,9 @@ a:hover {
     }
 
     .btn-transparent {
-        position: relative; /* Sätt position: absolute på knappen */
-        bottom: 520px; /* Placera knappen längst upp */
-        right: 0; /* Placera knappen längst till höger */
+        position: relative; 
+        bottom: 520px; 
+        right: 0; 
         left: 1090px;
         width: 50%;
     }
@@ -1292,53 +1313,53 @@ a:hover {
         position: relative;
         justify-content: center;
         align-items: center;
-        top: 45%; /* Placera prickarna i mitten vertikalt */
-        left: 50%; /* Placera prickarna i mitten horisontellt */
-        transform: translate(-50%, -50%); /* Centrera prickarna korrekt */
+        top: 45%; 
+        left: 50%;
+        transform: translate(-50%, -50%); 
         
     }
 
     .dot {
-        width: 10px; /* Justera bredden efter behov */
-        height: 10px; /* Justera höjden efter behov */
-        background-color: #D1D1D1; /* Svart färg */
-        border-radius: 50%; /* Gör den rund */
-        margin: 0 5px; /* Avstånd mellan prickarna */
+        width: 10px; 
+        height: 10px; 
+        background-color: #D1D1D1; 
+        border-radius: 50%; 
+        margin: 0 5px; 
     }
 
     .black-dot {
-        background-color: #191919; /* Ändra bakgrundsfärgen till röd */
-        /* Andra stilar för den röda punkten om det behövs */
+        background-color: #191919; 
+        
     }
 
 }
 
 .Menu-end {
-    background-color: #0E1021; /* Bakgrundsfärg */
-    color: #fff; /* Textfärg */
-    padding: 30px; /* Yttre fyllnad */
+    background-color: #0E1021; 
+    color: #fff; 
+    padding: 30px; 
     height: 530px;
 
     .lines img {
         width: auto;
-        max-height: 100%; /* Anpassa höjden så att bilden inte sträcker sig över sektionen */
+        max-height: 100%; 
         position: relative;
         bottom: 100px;
         left: 1200px;
     }
 
-/* Skapa ett CSS Grid med fem kolumner och automatisk radhöjd */
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 60px; /* Avstånd mellan fraktioner */
-    margin: 0 auto; /* Centrera innehållet horisontellt */
-    padding: 90px; /* Yttre fyllnad */
+    gap: 60px; 
+    margin: 0 auto; 
+    padding: 90px; 
 }
 
 .showcase-fraction {
 left: 190px;
-//margin-right: 40px;
+
 width: 100%;
 text-align: left;
 
@@ -1354,14 +1375,14 @@ img {
 }
 }
 
-/* Styla fraktioner */
+
 .fraction {
     text-align: left;
     width: 90%;
     margin-left: 50px;
 }
 
-/* Styla länkar */
+
 .fraction a {
     text-decoration: none;
     color: #fff;
@@ -1370,32 +1391,40 @@ img {
 }
 
 
-/* Styla rubriker */
+
 h4 {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 40px;
     color: #ffffff;
+
+    &:hover {
+        font-size: 24px; 
+        font-weight: 900;
+    }
 }
 
-/* Styla vanlig text */
+
 p {
     font-size: 16px;
     color: rgba(255,255,255,0.6980392156862745 );
     margin-bottom: 15px;
     font-family: 'inter';
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
-/* Styla länkar i vanlig text */
+
 p a {
     color: #fff;
     text-decoration: none;
 }
 
-/* Ändra färg på länkar vid hover */
-a:hover {
-    color: #ff8800;
-}
+
+
+
 }
 
 .text-social-media {
