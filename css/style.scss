@@ -651,6 +651,31 @@ gap: 70px;
             padding: 40px 80px;
             
         }
+        
+        a:hover {
+            color: #191919;
+            //text-decoration: underline;
+        }
+        .icon-text-item:hover p {
+            transform: scale(1.1); /* Ändra storleken efter behov */
+            font-weight: 1200;
+            //text-decoration: underline;
+        }
+        
+        /* Återställ texten till normal storlek när muspekaren inte längre hovrar över dem */
+        .icon-text-item p {
+            transition: transform 0.3s ease; /* Smidig övergångseffekt */
+        }
+        .icon-text-item:hover h5 {
+            transform: scale(1.2); /* Ändra storleken efter behov */
+            font-weight: 1200;
+            //text-decoration: underline;
+        }
+        
+        /* Återställ texten till normal storlek när muspekaren inte längre hovrar över dem */
+        .icon-text-item h5 {
+            transition: transform 0.3s ease; /* Smidig övergångseffekt */
+        }
 
         .icon-text-item {
             display: flex;
@@ -659,6 +684,7 @@ gap: 70px;
             align-items: center; /* Centrera innehållet vertikalt */
             text-align: center; /* Centrera texten horisontellt */
             margin-bottom: 10px;
+            
         }
         .text-content {
             text-align: left; /* Centrera textinnehållet horisontellt */
@@ -730,6 +756,15 @@ gap: 70px;
     display: flex;
     flex-direction: column;
     background-color: #F0EFE9;
+
+    a {
+        transition: transform 0.3s ease; 
+    
+    :hover {
+        transform: scale(1.3); 
+        background-color: #edcf87;
+    }
+    }
 
     .service-header {
         display: flex;
@@ -821,6 +856,7 @@ p {
     padding: 12px;
     border-radius: 50%; /* Skapar en rund bakgrund */
     background-color: #0e0d0d; /* Bakgrundsfärgen runt pilen */
+
 }
 
 /* Justera storlek och färg på pilen */
@@ -987,7 +1023,7 @@ height: 500px;
     margin-right: 80px;
     margin-top: 20px;
     
-   
+    
 
     .container1 {
 
@@ -1061,8 +1097,11 @@ height: 500px;
                 }
 
 }
-
-    }
+a:hover {
+    color: #191919;
+    text-decoration: underline;
+    
+}
 
 
     .container3 {
@@ -1071,7 +1110,10 @@ height: 500px;
         padding: 20px;
         justify-content: center;
 
-
+        a:hover {
+            color: #191919;
+            text-decoration: underline;
+        }
         .profile-3 {
             text-decoration: none;
             img {
@@ -1128,6 +1170,11 @@ height: 500px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
     gap: 90px; 
+    transition: transform 0.3s ease; 
+    
+    :hover {
+        transform: scale(1.1); 
+    }
 }
 }
 
@@ -1162,15 +1209,25 @@ height: 500px;
         text-align: left;
         text-decoration: none;
         //padding: 90px;
-        
+
     }
     
     /* Bildstil (storlek och maxbredd) */
     .article img {
         width: 420px;
         height: 230px;
+        
+    }
+    .article:hover h6 {
+        transform: scale(1.1); /* Ändra storleken efter behov */
+        font-weight: 1200;
+        text-decoration: underline;
     }
     
+    /* Återställ texten till normal storlek när muspekaren inte längre hovrar över dem */
+    .article h6 {
+        transition: transform 0.3s ease; /* Smidig övergångseffekt */
+    }
     /* Rubrik 6 (h6) */
     .article h6 {
         font-size: 22px;
@@ -1254,6 +1311,117 @@ height: 500px;
 
 }
 
+.Menu-end {
+    background-color: #0E1021; /* Bakgrundsfärg */
+    color: #fff; /* Textfärg */
+    padding: 30px; /* Yttre fyllnad */
+    height: 530px;
+
+    .lines img {
+        width: auto;
+        max-height: 100%; /* Anpassa höjden så att bilden inte sträcker sig över sektionen */
+        position: relative;
+        bottom: 100px;
+        left: 1200px;
+    }
+
+/* Skapa ett CSS Grid med fem kolumner och automatisk radhöjd */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 60px; /* Avstånd mellan fraktioner */
+    margin: 0 auto; /* Centrera innehållet horisontellt */
+    padding: 90px; /* Yttre fyllnad */
+}
+
+.showcase-fraction {
+left: 190px;
+//margin-right: 40px;
+width: 100%;
+text-align: left;
+
+p {
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 0px;
+    gap: 70px;
+}
+}
+
+/* Styla fraktioner */
+.fraction {
+    text-align: left;
+    width: 90%;
+    margin-left: 50px;
+}
+
+/* Styla länkar */
+.fraction a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+/* Styla rubriker */
+h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+/* Styla vanlig text */
+p {
+    font-size: 16px;
+    color: rgba(255,255,255,0.6980392156862745 );
+    margin-bottom: 15px;
+    font-family: 'inter';
+}
+
+/* Styla länkar i vanlig text */
+p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Ändra färg på länkar vid hover */
+a:hover {
+    color: #ff8800;
+}
+}
+
+.text-social-media {
+    background-color: #0E1021;
+    border-top: 1px solid rgba(255,255,255,0.2 ); 
+    padding: 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 15px;
+    p {
+        font-family: 'inter';
+        font-size: 16px;
+        color: rgba(255,255,255,0.6980392156862745 );
+        margin-right: 500px;
+    }
+    a {
+        color: #ffffff;
+        font-size: 1.3em;
+        margin-left: 10px;
+        
+
+        &:hover {
+            color: #58565689;
+        }
+    }
+   
+}
 
 
 

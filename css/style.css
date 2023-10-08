@@ -549,6 +549,8 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   flex: 1;
   padding-right: 0px;
   padding-left: 90px;
+  /* Återställ texten till normal storlek när muspekaren inte längre hovrar över dem */
+  /* Återställ texten till normal storlek när muspekaren inte längre hovrar över dem */
 }
 .consulting-agency .left-grid .icon-text-container {
   display: flex;
@@ -557,6 +559,23 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   text-align: center;
   gap: 20px; /* Avstånd mellan ikonerna och texten */
   padding: 40px 80px;
+}
+.consulting-agency .left-grid a:hover {
+  color: #191919;
+}
+.consulting-agency .left-grid .icon-text-item:hover p {
+  transform: scale(1.1); /* Ändra storleken efter behov */
+  font-weight: 1200;
+}
+.consulting-agency .left-grid .icon-text-item p {
+  transition: transform 0.3s ease; /* Smidig övergångseffekt */
+}
+.consulting-agency .left-grid .icon-text-item:hover h5 {
+  transform: scale(1.2); /* Ändra storleken efter behov */
+  font-weight: 1200;
+}
+.consulting-agency .left-grid .icon-text-item h5 {
+  transition: transform 0.3s ease; /* Smidig övergångseffekt */
 }
 .consulting-agency .left-grid .icon-text-item {
   display: flex;
@@ -626,6 +645,13 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   /* Flexbox-stil för serviceboxarna */
   /* Justera storlek och färg på pilen */
   /* Stil för .btn-black */
+}
+.service-consulting a {
+  transition: transform 0.3s ease;
+}
+.service-consulting a :hover {
+  transform: scale(1.3);
+  background-color: #edcf87;
 }
 .service-consulting .service-header {
   display: flex;
@@ -863,6 +889,7 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   width: 120%;
   padding: 20px;
   justify-content: center;
+  transition: transform 0.3s ease;
 }
 .features .container-border .container2 .profile-1 {
   text-decoration: none;
@@ -902,10 +929,19 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   font-size: 16px;
   color: rgba(25, 25, 25, 0.6980392157);
 }
+.features .container-border .container2 a:hover {
+  color: #191919;
+  text-decoration: underline;
+  transform: scale(1.2); /* Ändra storleken efter behov */
+}
 .features .container-border .container3 {
   width: 120%;
   padding: 20px;
   justify-content: center;
+}
+.features .container-border .container3 a:hover {
+  color: #191919;
+  text-decoration: underline;
 }
 .features .container-border .container3 .profile-3 {
   text-decoration: none;
@@ -956,12 +992,17 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 90px;
+  transition: transform 0.3s ease;
+}
+.companies .Logos :hover {
+  transform: scale(1.1);
 }
 
 .Article-and-News {
   height: 800px;
   /* Enskild artikel */
   /* Bildstil (storlek och maxbredd) */
+  /* Återställ texten till normal storlek när muspekaren inte längre hovrar över dem */
   /* Rubrik 6 (h6) */
   /* Ytterligare stil för övrig text */
   /* Den gula boxen */
@@ -995,6 +1036,14 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .Article-and-News .article img {
   width: 420px;
   height: 230px;
+}
+.Article-and-News .article:hover h6 {
+  transform: scale(1.1); /* Ändra storleken efter behov */
+  font-weight: 1200;
+  text-decoration: underline;
+}
+.Article-and-News .article h6 {
+  transition: transform 0.3s ease; /* Smidig övergångseffekt */
 }
 .Article-and-News .article h6 {
   font-size: 22px;
@@ -1062,4 +1111,100 @@ header .container .menu .main-menu nav a.active::after, header .container .menu 
 .Article-and-News .black-dot {
   background-color: #191919; /* Ändra bakgrundsfärgen till röd */
   /* Andra stilar för den röda punkten om det behövs */
+}
+
+.Menu-end {
+  background-color: #0E1021; /* Bakgrundsfärg */
+  color: #fff; /* Textfärg */
+  padding: 30px; /* Yttre fyllnad */
+  height: 530px;
+  /* Skapa ett CSS Grid med fem kolumner och automatisk radhöjd */
+  /* Styla fraktioner */
+  /* Styla länkar */
+  /* Styla rubriker */
+  /* Styla vanlig text */
+  /* Styla länkar i vanlig text */
+  /* Ändra färg på länkar vid hover */
+}
+.Menu-end .lines img {
+  width: auto;
+  max-height: 100%; /* Anpassa höjden så att bilden inte sträcker sig över sektionen */
+  position: relative;
+  bottom: 100px;
+  left: 1200px;
+}
+.Menu-end .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 60px; /* Avstånd mellan fraktioner */
+  margin: 0 auto; /* Centrera innehållet horisontellt */
+  padding: 90px; /* Yttre fyllnad */
+}
+.Menu-end .showcase-fraction {
+  left: 190px;
+  width: 100%;
+  text-align: left;
+}
+.Menu-end .showcase-fraction p {
+  margin-top: 20px;
+}
+.Menu-end .showcase-fraction img {
+  max-width: 100%;
+  height: auto;
+  padding: 0px;
+  gap: 70px;
+}
+.Menu-end .fraction {
+  text-align: left;
+  width: 90%;
+  margin-left: 50px;
+}
+.Menu-end .fraction a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+.Menu-end h4 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+.Menu-end p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6980392157);
+  margin-bottom: 15px;
+  font-family: "inter";
+}
+.Menu-end p a {
+  color: #fff;
+  text-decoration: none;
+}
+.Menu-end a:hover {
+  color: #ff8800;
+}
+
+.text-social-media {
+  background-color: #0E1021;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.text-social-media p {
+  font-family: "inter";
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6980392157);
+  margin-right: 500px;
+}
+.text-social-media a {
+  color: #ffffff;
+  font-size: 1.3em;
+  margin-left: 10px;
+}
+.text-social-media a:hover {
+  color: rgba(88, 86, 86, 0.537254902);
 }/*# sourceMappingURL=style.css.map */
